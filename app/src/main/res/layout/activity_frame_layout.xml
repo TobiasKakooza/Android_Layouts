@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrameLayout">
+
+    <!-- Desert Image (keep it in the background) -->
+    <ImageView
+        android:id="@+id/imgDesert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/desert"
+        android:scaleType="centerCrop" />
+
+    <!-- Student's Name (add background and bring to front) -->
+    <TextView
+        android:id="@+id/tvStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student's Name"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="#80000000"
+    android:layout_gravity="top|start"
+    android:padding="10dp" />
+
+    <!-- Overlaying Label (add background and color to ensure visibility) -->
+    <TextView
+        android:id="@+id/tvOverlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desert Landscape"
+        android:textColor="#FFFFFF"
+        android:background="#80000000"
+    android:textSize="24sp"
+    android:layout_gravity="center"
+    android:padding="8dp" />
+
+</FrameLayout>

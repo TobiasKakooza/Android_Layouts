@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Linear_layout">
+
+
+    <!-- Student's Name -->
+    <TextView
+        android:id="@+id/tvStudentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student's Name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Item Input Field -->
+    <EditText
+        android:id="@+id/etItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter item name" />
+
+    <!-- Add Button -->
+    <Button
+        android:id="@+id/btnAddItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Item"
+        android:layout_marginTop="10dp" />
+
+    <!-- Sample List of Items -->
+    <TextView
+        android:id="@+id/tvItem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Milk"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Bread"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvItem3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Eggs"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
